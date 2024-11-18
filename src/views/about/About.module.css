@@ -1,0 +1,29 @@
+.container {
+    flex-direction: row;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.description {
+    max-width: 400px;
+}
+
+.profile {
+    height: 400px;
+}
+
+@media only screen and (1px <= width <= 576px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+        max-height: 100%;
+        justify-content: center;
+    }
+    
+    .profile {
+        max-height: 200px;
+    }
+  }
