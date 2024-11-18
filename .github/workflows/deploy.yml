@@ -33,6 +33,8 @@ jobs:
         run: ${{ steps.set-package-manager.outputs.manager }} ${{ steps.set-package-manager.outputs.command }}
       - name: Build project
         run: ${{ steps.set-package-manager.outputs.runner }} npm run build
+      - name: Test project
+        run: ${{ steps.set-package-manager.outputs.runner }} npm run test
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
