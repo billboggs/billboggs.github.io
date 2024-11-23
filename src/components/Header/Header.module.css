@@ -1,0 +1,43 @@
+.header {
+  height: rem(70px);
+  width: 100%;
+  background-color: var(--mantine-color-body);
+}
+
+.inner {
+  height: rem(70px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  padding: rem(8px) rem(12px);
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 500;
+
+  .header:hover {
+    background-color: light-dark(
+      var(--mantine-color-gray-0),
+      var(--mantine-color-dark-6)
+    );
+  }
+
+  [data-mantine-color-scheme] &[data-active] {
+    background-color: var(--mantine-color-dark-2);
+    color: var(--mantine-color-white);
+  }
+}
+
+@media only screen and (1px <= width <= 576px) {
+    .inner {
+      margin: 0 .5rem 0 .5rem;
+      width: 100%;
+    }
+  }
