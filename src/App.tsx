@@ -11,8 +11,11 @@ export default function App() {
   const router = createBrowserRouter(routes);
 
   return (
-    <MantineProvider defaultColorScheme="dark">
-      <AppShell header={{height: 56}}>
+    <MantineProvider
+      defaultColorScheme="dark"
+      theme={{fontFamily: 'Poppins, sans-serif'}}
+    >
+      <AppShell header={{height: 70}}>
         <RouterProvider router={router}></RouterProvider>
       </AppShell>
     </MantineProvider>

@@ -1,4 +1,4 @@
-import Layout from '@billboggs/components/layout';
+import Layout from '@billboggs/components/Layout';
 
 const Projects = () => {
   return <Layout>Coming Soon</Layout>;

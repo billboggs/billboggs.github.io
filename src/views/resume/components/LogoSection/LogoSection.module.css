@@ -1,0 +1,15 @@
+.logoSectionContent {
+    height: 100%;
+    width: 100%;
+}
+
+.logoSectionContentRight {
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@media only screen and (1px <= width <= 576px) {
+    .logoSectionContentRight {
+        align-items: flex-start;
+    }
+}
