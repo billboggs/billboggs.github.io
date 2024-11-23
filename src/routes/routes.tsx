@@ -8,7 +8,6 @@ import {ABOUT_PATH, RESUME_PATH} from './constants';
 const routes = [
   {
     element: <About />,
-    index: true,
     path: ABOUT_PATH,
   },
   {
