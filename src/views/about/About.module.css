@@ -14,7 +14,7 @@
     height: 400px;
 }
 
-@media only screen and (1px <= width <= 576px) {
+@media (max-width: $mantine-breakpoint-sm) {
     .container {
         flex-direction: column;
         gap: 20px;

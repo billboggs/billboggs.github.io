@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-@media only screen and (1px <= width <= 576px) {
+@media (max-width: $mantine-breakpoint-sm) {
     .logoSectionContentRight {
         align-items: flex-start;
     }
