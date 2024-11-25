@@ -18,6 +18,7 @@ import PSU from '@billboggs/assets/psu.svg';
 import Contact from '@billboggs/components/Contact';
 import Layout from '@billboggs/components/Layout';
 
+import JobItem from './components/JobItem';
 import LogoSection from './components/LogoSection';
 import ResumeSection from './components/ResumeSection';
 import {
@@ -28,7 +29,6 @@ import {
   PROJECTS_SECTION,
   PSU_URL,
   RESUME_ITEMS,
-  ResumeItem,
   ROLE_TITLE,
   ROTOR_WAKE_URL,
   SKILLS,
@@ -206,31 +206,6 @@ const Resume = () => {
         </Flex>
       </Flex>
     </Layout>
-  );
-};
-
-const JobItem = ({company, timespan, title}: ResumeItem) => {
-  return (
-    <>
-      <LogoSection
-        leftSection={
-          <>
-            <Text className={css.sectionTitle}>{title}</Text>
-            <Text c="dimmed" fw={400} size="sm">
-              {company.name}
-            </Text>
-          </>
-        }
-        logoSrc={company.logo}
-        rightSection={
-          <>
-            <Text c="dimmed" fw={400} size="sm">
-              {timespan}
-            </Text>
-          </>
-        }
-      />
-    </>
   );
 };
 

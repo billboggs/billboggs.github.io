@@ -1,6 +1,6 @@
 import {Flex, Image, Text, Title} from '@mantine/core';
 
-import Profile from '@billboggs/assets/profile.jpeg';
+import Profile from '@billboggs/assets/profile.jpg';
 import Contact from '@billboggs/components/Contact';
 import Layout from '@billboggs/components/Layout';
 
