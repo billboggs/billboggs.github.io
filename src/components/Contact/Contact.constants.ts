@@ -5,5 +5,4 @@ export const LINKEDIN_LABEL = 'LinkedIn';
 export const LINKEDIN_URL = 'https://linkedin.com/in/william-boggs-620250a9';
 export const MAIL_LABEL = 'Mail';
 export const MAIL_TO = 'mailto:dev.bill.m.boggs@gmail.com';
-export const RESUME_URL =
-  'https://drive.google.com/file/d/1L4Rpp0AWoDCISqHEN3ASeAutAm0GwGO5/view?usp=sharing';
+export const RESUME_URL = 'https://billboggs.github.io/resume.pdf';
