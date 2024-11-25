@@ -107,7 +107,12 @@ const Resume = () => {
                         <Group>
                           <Flex align="center" gap={10}>
                             {skill.icon}
-                            <Text w={500}>{skill.name}</Text>
+                            <Text
+                              className={css.skillName}
+                              w={{base: 100, xs: 500}}
+                            >
+                              {skill.name}
+                            </Text>
                           </Flex>
                           <Rating value={skill.level} />
                         </Group>

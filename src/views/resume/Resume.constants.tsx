@@ -1,16 +1,27 @@
 import {ReactNode} from 'react';
 import {BiLogoKubernetes} from 'react-icons/bi';
 import {CgCircleci} from 'react-icons/cg';
-import {DiDocker, DiDotnet, DiGithub, DiJavascript} from 'react-icons/di';
+import {
+  DiDocker,
+  DiDotnet,
+  DiGithub,
+  DiJavascript,
+  DiReact,
+} from 'react-icons/di';
 import {FaPython} from 'react-icons/fa';
 import {FaAws, FaGolang} from 'react-icons/fa6';
 import {RiGitlabLine} from 'react-icons/ri';
 import {
   SiAnsible,
   SiArgo,
+  SiCplusplus,
   SiGooglecloud,
   SiHelm,
+  SiHuggingface,
+  SiLangchain,
+  SiMicrosoftazure,
   SiPrometheus,
+  SiRedhatopenshift,
   SiTerraform,
 } from 'react-icons/si';
 
@@ -163,6 +174,7 @@ export const RESUME_ITEMS: ResumeItem[] = [
 
 export const SKILLS: SkillMap = {
   Languages: [
+    {name: 'C/C++', icon: <SiCplusplus />, level: 2},
     {name: 'C#', icon: <DiDotnet />, level: 3},
     {name: 'Golang', icon: <FaGolang />, level: 5},
     {name: 'Javascript', icon: <DiJavascript />, level: 4},
@@ -171,15 +183,25 @@ export const SKILLS: SkillMap = {
   Infrastructure: [
     {name: 'Ansible', icon: <SiAnsible />, level: 3},
     {name: 'ArgoCD', icon: <SiArgo />, level: 3},
-    {name: 'AWS', icon: <FaAws />, level: 4},
     {name: 'CircleCI', icon: <CgCircleci />, level: 4},
     {name: 'Docker', icon: <DiDocker />, level: 5},
-    {name: 'GCP', icon: <SiGooglecloud />, level: 4},
     {name: 'Github', icon: <DiGithub />, level: 4},
     {name: 'Gitlab', icon: <RiGitlabLine />, level: 4},
     {name: 'Helm', icon: <SiHelm />, level: 5},
     {name: 'Kubernetes', icon: <BiLogoKubernetes />, level: 5},
     {name: 'Prometheus', icon: <SiPrometheus />, level: 4},
     {name: 'Terraform', icon: <SiTerraform />, level: 3},
+  ],
+  'Cloud Platforms': [
+    {name: 'AWS', icon: <FaAws />, level: 4},
+    {name: 'Azure', icon: <SiMicrosoftazure />, level: 2},
+    {name: 'GCP', icon: <SiGooglecloud />, level: 3},
+    {name: 'OpenShift', icon: <SiRedhatopenshift />, level: 2},
+  ],
+  Frameworks: [
+    {name: 'LangChain', icon: <SiLangchain />, level: 2},
+    {name: 'Hugging Face', icon: <SiHuggingface />, level: 2},
+    {name: '.NET', icon: <DiDotnet />, level: 3},
+    {name: 'React', icon: <DiReact />, level: 4},
   ],
 };
