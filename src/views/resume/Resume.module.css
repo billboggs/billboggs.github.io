@@ -64,6 +64,10 @@
         width: 100%;
     }
    
+    .jobHighlights {
+        padding: .5rem 1.5rem 0 0;
+    }
+
     .jobItemText {
         display: inline-block;
     }
