@@ -54,12 +54,11 @@ const Resume = () => {
             </Flex>
             <Text className={css.descriptionSummary}>
               I am a software developer with a strong passion for continuous
-              learning in response to the evolving technology landscape. My
-              professional experience spans a variety of domains, including
-              embedded systems, full-stack web development, and
-              Infrastructure/DevOps engineering. Currently, I am focused on
-              expanding my expertise in AI tooling to stay at the forefront of
-              emerging technologies.
+              learning and the evolving technology landscape. My professional
+              experience spans a variety of domains, including embedded systems,
+              full-stack web development, and Infrastructure/DevOps engineering.
+              Currently, I am focused on expanding my expertise in AI tooling to
+              stay at the forefront of emerging technologies.
             </Text>
           </Group>
           <ResumeSection title={EXPERIENCE_SECTION}>

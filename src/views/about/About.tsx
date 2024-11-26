@@ -22,8 +22,8 @@ const About = () => {
           <Text>
             Hi there! I&apos;m Bill Boggs, a Software Engineer with a passion
             for learning all parts of the software stack. I&apos;m currently
-            focused on AI and how it will shape the future of software
-            development.
+            focused on Generative AI and how it will shape the future of
+            software development.
           </Text>
           <Text>
             Browse through my projects, read about my latest ventures, or reach
