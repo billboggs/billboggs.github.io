@@ -6,6 +6,7 @@
 .logoSectionContentRight {
     align-items: flex-end;
     justify-content: center;
+    padding-right: 0.25rem;
 }
 
 @media (max-width: $mantine-breakpoint-sm) {
