@@ -2,6 +2,8 @@ import {Anchor, Flex, Tooltip} from '@mantine/core';
 import {BiLogoGmail} from 'react-icons/bi';
 import {FaDownload, FaGithub, FaLinkedin} from 'react-icons/fa';
 
+import {RESUME_URL} from '@billboggs/constants';
+
 import {
   GITHUB_LABEL,
   GITHUB_URL,
@@ -10,7 +12,6 @@ import {
   LINKEDIN_URL,
   MAIL_LABEL,
   MAIL_TO,
-  RESUME_URL,
 } from './Contact.constants';
 
 const Contact = () => {

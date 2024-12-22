@@ -2,6 +2,7 @@ import {
   Accordion,
   Anchor,
   Box,
+  Button,
   Card,
   Flex,
   Grid,
@@ -11,12 +12,13 @@ import {
   Text,
   Title,
 } from '@mantine/core';
+import {FaDownload} from 'react-icons/fa';
 
 import Boeing from '@billboggs/assets/boeing.svg';
 import CKA from '@billboggs/assets/cka.png';
 import PSU from '@billboggs/assets/psu.svg';
-import Contact from '@billboggs/components/Contact';
 import Layout from '@billboggs/components/Layout';
+import {RESUME_URL} from '@billboggs/constants';
 
 import JobItem from './components/JobItem';
 import LogoSection from './components/LogoSection';
@@ -42,16 +44,18 @@ const Resume = () => {
       <Flex align="center" className={css.container} direction="column">
         <Flex className={css.content} direction="column" gap={20}>
           <Group align="flex-start" gap="xs" justify="space-between">
-            <Flex
-              align="flex-start"
-              className={css.description}
-              direction={{base: 'column', xs: 'row'}}
-              gap={10}
-              justify="space-between"
-            >
+            <Group align="center" w="100%">
               <Title className={css.roleTitle}>{ROLE_TITLE}</Title>
-              <Contact />
-            </Flex>
+              <Button
+                component="a"
+                href={RESUME_URL}
+                leftSection={<FaDownload />}
+                target="_blank"
+                variant="outline"
+              >
+                Download
+              </Button>
+            </Group>
             <Text className={css.descriptionSummary}>
               I am a software developer with a strong passion for continuous
               learning and the evolving technology landscape. My professional
