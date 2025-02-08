@@ -1,5 +1,5 @@
 import {screen} from '@testing-library/react';
-import {describe, expect, it, test} from 'vitest';
+import {describe, expect, test} from 'vitest';
 
 import {renderRouter} from '@billboggs/tests/render';
 import Resume from '@billboggs/views/resume/Resume';
