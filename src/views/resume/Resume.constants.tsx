@@ -178,7 +178,7 @@ export const SKILLS: SkillMap = {
     {name: 'C#', icon: <DiDotnet />, level: 3},
     {name: 'Golang', icon: <FaGolang />, level: 5},
     {name: 'Javascript', icon: <DiJavascript />, level: 4},
-    {name: 'Python', icon: <FaPython />, level: 3},
+    {name: 'Python', icon: <FaPython />, level: 4},
   ],
   Infrastructure: [
     {name: 'Ansible', icon: <SiAnsible />, level: 3},
