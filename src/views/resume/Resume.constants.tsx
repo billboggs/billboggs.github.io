@@ -27,6 +27,7 @@ import {
 
 import Boxboat from '@billboggs/assets/boxboat.svg';
 import Determined from '@billboggs/assets/determined.svg';
+import Fiddler from '@billboggs/assets/fiddler.svg';
 import HPE from '@billboggs/assets/hpe.svg';
 import Levvel from '@billboggs/assets/levvel.png';
 import Spencer from '@billboggs/assets/spencer.png';
@@ -72,6 +73,17 @@ export const RESUME_ITEMS: ResumeItem[] = [
   {
     id: 1,
     company: {
+      logo: Fiddler,
+      name: 'Fiddler AI',
+      website: 'https://www.fiddler.ai',
+    },
+    title: 'Staff Platform Engineer',
+    timespan: 'February 2025 - Present',
+    highlights: [],
+  },
+  {
+    id: 2,
+    company: {
       logo: Determined,
       name: 'HPE AI at Scale',
       website: 'https://www.determined.ai',
@@ -92,7 +104,7 @@ export const RESUME_ITEMS: ResumeItem[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     company: {
       logo: HPE,
       name: 'HPE',
@@ -116,7 +128,7 @@ export const RESUME_ITEMS: ResumeItem[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     company: {
       logo: Boxboat,
       name: 'Boxboat',
@@ -135,7 +147,7 @@ export const RESUME_ITEMS: ResumeItem[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     company: {
       logo: Levvel,
       name: 'Levvel.io',
@@ -154,7 +166,7 @@ export const RESUME_ITEMS: ResumeItem[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     company: {
       logo: Spencer,
       name: 'Spencer Health Solutions',
