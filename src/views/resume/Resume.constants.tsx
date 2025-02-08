@@ -56,7 +56,7 @@ export interface ResumeItem {
   highlights?: string[];
 }
 
-export const ROLE_TITLE = 'Senior Full-Stack Infrastructure Engineer';
+export const ROLE_TITLE = 'Staff Platform Engineer';
 
 export const CERTIFICATIONS_SECTION = 'Certifications';
 export const EDUCATION_SECTION = 'Education';
