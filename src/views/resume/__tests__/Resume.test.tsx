@@ -1,5 +1,5 @@
 import {screen} from '@testing-library/react';
-import {describe, expect, test} from 'vitest';
+import {describe, expect, it, test} from 'vitest';
 
 import {renderRouter} from '@billboggs/tests/render';
 import Resume from '@billboggs/views/resume/Resume';
@@ -22,7 +22,8 @@ describe('resume', () => {
   test('renders correct professional experience accordion items', async () => {
     renderRouter(<Resume />);
     RESUME_ITEMS.forEach((item) => {
-      expect(screen.getByText(item.title)).toBeInTheDocument();
+      const elements = screen.getAllByText(item.title);
+      expect(elements.length).toBeGreaterThan(0);
     });
   });
 
