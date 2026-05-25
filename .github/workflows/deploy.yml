@@ -26,8 +26,9 @@ jobs:
       - name: Socket supply-chain scan
         # Scans the manifest/lockfile and exits non-zero on unhealthy alerts,
         # which fails this job and skips the gated `build` job below.
-        run: socket ci
+        run: socket ci --org "$SOCKET_ORG"
         env:
+          SOCKET_ORG: personal-work-2pgvx
           SOCKET_SECURITY_API_KEY: ${{ secrets.SOCKET_SECURITY_API_KEY }}
   build:
     needs: security
