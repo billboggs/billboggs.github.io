@@ -1,0 +1,15 @@
+# Dependabot keeps the SHA-pinned GitHub Actions in deploy.yml current.
+# It bumps the commit digest AND updates the trailing `# vX.Y.Z` comment,
+# so the pins stay both immutable (security) and readable (maintainability).
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      # One grouped PR for all action bumps instead of one PR per action.
+      actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: "ci"
