@@ -26,11 +26,16 @@ jobs:
       - name: Socket supply-chain scan
         # Scans the manifest/lockfile and exits non-zero on unhealthy alerts,
         # which fails this job and skips the gated `build` job below.
+        # --org is passed explicitly: unlike the `socket ci` alias, `scan create`
+        # does NOT resolve the org from the token and otherwise prompts for it,
+        # which in CI (no TTY) bails out with exit 0 and silently skips scanning.
+        # --no-interactive guarantees it errors rather than hangs on any prompt.
         # --repo/--branch associate the scan with this repo on the Socket
         # dashboard; --default-branch registers `main` so the alerts page
         # reflects its head scan.
         run: >
-          socket scan create --report
+          socket scan create --report --no-interactive
+          --org "$SOCKET_CLI_ORG_SLUG"
           --repo billboggs.github.io
           --branch ${{ github.ref_name }}
           --default-branch
