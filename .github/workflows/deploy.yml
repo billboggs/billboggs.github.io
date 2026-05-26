@@ -26,7 +26,14 @@ jobs:
       - name: Socket supply-chain scan
         # Scans the manifest/lockfile and exits non-zero on unhealthy alerts,
         # which fails this job and skips the gated `build` job below.
-        run: socket ci
+        # --repo/--branch associate the scan with this repo on the Socket
+        # dashboard; --default-branch registers `main` so the alerts page
+        # reflects its head scan.
+        run: >
+          socket scan create --report
+          --repo billboggs.github.io
+          --branch ${{ github.ref_name }}
+          --default-branch
         env:
           SOCKET_CLI_ORG_SLUG: personal-work-2pgvx
           SOCKET_CLI_API_TOKEN: ${{ secrets.SOCKET_SECURITY_API_KEY }}
